@@ -1,4 +1,4 @@
-import { Author, View } from './connectors';
+import { Author, View } from './connector';
 const resolvers = {
     Query: {
       author(root, args){
