@@ -1,4 +1,5 @@
 import { Author, View } from './connector';
+import casual from 'casual';
 const resolvers = {
     Query: {
       author(root, args){
