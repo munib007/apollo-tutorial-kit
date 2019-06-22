@@ -1,4 +1,5 @@
 // at the top with imports:
+import casual from 'casual';
 import Mongoose from 'mongoose';
 
 // somewhere in the middle:
