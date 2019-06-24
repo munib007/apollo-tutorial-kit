@@ -2,8 +2,18 @@
 import casual from 'casual';
 import Mongoose from 'mongoose';
 
+var db;
+var error;
 // somewhere in the middle:
-const mongo = Mongoose.connect('mongodb://localhost/views');
+const mongo = Mongoose.connect('mongodb://127:0:0:1:27017/views',function(err, database){
+error = err;    
+db = database;
+var f1;
+waiting.forEach(function(callback) {
+    callback(err, database);
+  });
+}
+);
 
 const ViewSchema = Mongoose.Schema({
   postId: Number,
